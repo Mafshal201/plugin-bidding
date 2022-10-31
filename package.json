@@ -1,5 +1,5 @@
 {
-  "name": "@husamaz1994/api-plugin-bidding",
+  "name": "@mafshal201/api-plugin-bidding",
   "description": "Boilerplate Example plugin for the Reaction API",
   "version": "1.0.8",
   "main": "index.js",
@@ -7,12 +7,12 @@
   "engines": {
     "node": ">=12.14.1"
   },
-  "homepage": "https://github.com/blackspider1994/api-plugin-bidding",
-  "url": "https://github.com/blackspider1994/api-plugin-bidding",
-  "email": "usama.sama@gmail.com",
+  "homepage": "https://github.com/Mafshal201/plugin-bidding.git",
+  "url": "https://github.com/Mafshal201/plugin-bidding.git",
+  "email": "muhammad.afshal@codistan.org",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/blackspider1994/api-plugin-bidding"
+    "url": "git+https://github.com/Mafshal201/plugin-bidding.git"
   },
   "author": {
     "name": "Usama Zulfiqar",
@@ -21,7 +21,7 @@
   },
   "license": "Apache-2.0",
   "bugs": {
-    "url": "https://github.com/blackspider1994/api-plugin-bidding/issues"
+    "url": "https://github.com/Mafshal201/plugin-bidding.git/issues"
   },
   "sideEffects": false,
   "dependencies": {
