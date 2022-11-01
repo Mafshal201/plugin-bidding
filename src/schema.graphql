@@ -61,6 +61,11 @@ type Notification {
   type: notificationTypes
   url: String
 }
+
+type createdByUserinfo {
+  name: String!
+  image: String
+}
 input createNotificationInput {
   details: String
   hasDetails: Boolean!
