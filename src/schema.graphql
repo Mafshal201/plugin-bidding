@@ -23,7 +23,9 @@ type Bid implements Node {
   createdBy: ID
   wonBy: ID
   lostBy: ID
+  createdByinfo: createdByUserinfo
   soldBy: ID
+  soldByInfo: createdByUserinfo
 }
 type Offer implements Node {
   _id: ID!
@@ -31,9 +33,11 @@ type Offer implements Node {
   text: String
   updatedAt: DateTime
   createdAt: DateTime
+  sender: createdByUserinfo
   createdBy: ID
   type: offerTypes
   status: String
+  reciever: createdByUserinfo
   createdFor: ID
   canAccept: ID
 }
@@ -53,6 +57,7 @@ type Notification {
   timeSent: DateTime
   to: ID!
   from: ID
+  sender: createdByUserinfo
   type: notificationTypes
   url: String
 }
@@ -91,6 +96,8 @@ extend type Subscription {
 type coinTossSubscriptionPayload {
   result: String
   wonBy: ID
+  wonByInfo: createdByUserinfo
+  lostByInfo: createdByUserinfo
   lostBy: ID
   data: String
   head: ID
@@ -194,9 +201,6 @@ type profileObj {
   name: String
   profile: profile
   username: String
-}
-extend type ProductVariant {
-slug:String
 }
 type userProfile {
   name: String
